@@ -1,0 +1,44 @@
+.contato {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 160px;
+    max-width: 1200px;
+    border-radius: 24px;
+    padding: 2rem;
+    background: #fff;
+    filter: drop-shadow(0px -8px 8px rgba(0, 0, 0, 0.07));
+}
+
+.h1-text-align {
+    text-align: center;
+}
+
+.contato-caixa-fototexto {
+    display: flex;
+    justify-content: center;
+}
+
+.contato-caixa-texto {
+    display: grid;
+    justify-self: start;
+    align-self: center;
+    padding: 0rem 4rem;
+    gap: 4px;
+}
+
+.contato-caixa-texto h1,
+.contato-caixa-texto h2 {
+    font-weight: 600;
+    line-height: 1.1;
+    color: #1b1b1b;
+}
+
+.contato-caixa-texto p {
+    font-family: "Lato";
+    font-weight: 500;
+    color: var(--c3);
+}
+
+.contato-caixa-foto {
+    justify-self: center;
+}
