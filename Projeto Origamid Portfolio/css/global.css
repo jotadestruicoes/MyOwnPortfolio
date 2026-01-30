@@ -108,15 +108,20 @@ p {
         font-size: 48px;
     }
 
-    .projetos-texto-1 h2,
-    .projetos-texto-2 h2 {
-        font-size: 36px;
-    }
-
     .skill-unica {
         padding: 8px 16px;
         font-weight: 600;
         font-size: 18px;
         border-radius: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .playfair-display {
+        font-size: 36px;
+    }
+
+    .my-button-1 {
+        padding: 1rem 2.5rem;
     }
 }

@@ -2,12 +2,13 @@
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
+    justify-self: center;
     grid-template-columns:
         4fr
         2fr
         6fr;
     margin-top: 160px;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .idiomas p {
@@ -22,28 +23,16 @@
     display: flex;
     font-weight: 600;
     max-height: 32px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .proficiencia {
     display: grid;
     font-weight: 600;
+    text-align: end;
     max-height: 32px;
-    font-size: 24px;
+    font-size: 18px;
     color: #7c7c7c;
-}
-
-.grid::after {
-    display: block;
-    /* justify-content: space-between; */
-    content: "";
-    position: absolute;
-    margin-right: 280px;
-    place-self: end end;
-    width: 5px;
-    height: 150px;
-    border-radius: 12px;
-    background-color: #eaeaea;
 }
 
 .h3-2 {
@@ -54,11 +43,25 @@
 
 .grid {
     display: grid;
-    gap: 24px;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.grid::after {
+    display: block;
+    /* justify-content: space-between; */
+    content: "";
+    position: absolute;
+    left: 40%;
+    width: 5px;
+    height: 150px;
+    border-radius: 12px;
+    background-color: #eaeaea;
 }
 
 .grid-idioma {
     display: flex;
+    gap: 6rem;
     justify-content: space-between;
 }
 
@@ -70,10 +73,11 @@
     .idiomas {
         grid-template-columns: 1fr;
         max-width: 500px;
+        margin: 2rem;
     }
 
     .grid::after {
-        margin-right: 300px;
+        left: 35%;
     }
 
     .h3-2 {
@@ -81,6 +85,23 @@
     }
 
     #imagem-setas {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .idiomas {
+        margin: 0;
+    }
+
+    .grid-idioma {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0rem;
+        justify-items: center;
+    }
+
+    .grid::after {
         display: none;
     }
 }
